@@ -9,3 +9,16 @@ body {
 .list {
   margin-top: 2rem;
 }
+#select {
+  height: auto;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.poster img {
+  margin-top: 2rem;
+}
+
+.details {
+  text-align: center;
+}

@@ -25,7 +25,11 @@ function app() {
         movieListArr.forEach((movie) => {
           const movieTitle = document.createElement("option");
           movieTitle.innerText = movie.Title;
-          movieTitle.value = movie.Poster;
+          movieTitle.value = `
+            <img src="${movie.Poster}">
+            <h3 class="details">${movie.Title}</h3>
+            <h4 class="details">Year : ${movie.Year}</h4>
+            `;
           movieListBtn.appendChild(movieTitle);
         });
       })
@@ -35,12 +39,10 @@ function app() {
 
   function displayMovieDetails(e) {
     posterDiv.innerHTML = "";
-    const poster = document.createElement("img");
-    poster.src = e.target.value;
-    posterDiv.appendChild(poster);
+    posterDiv.innerHTML = e.target.value;
   }
   movieListBtn.addEventListener("change", displayMovieDetails);
 
   getMovies();
 }
-app();
+window.addEventListener("load", app);
