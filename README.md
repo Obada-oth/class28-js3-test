@@ -15,7 +15,7 @@ This test lasts 2 hours.
 ## Technical Requirements
 
 - Must fetch data from the OMDb API
-- Must include a `<select>` element with at least 3 `<option>` 
+- Must include a `<select>` element with at least 3 `<option>`
 - Must display basic movie information (`title`, `plot`, `poster`)
 - Using a CSS framework is optional. Custom CSS is also allowed!
 

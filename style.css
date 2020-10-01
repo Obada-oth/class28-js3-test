@@ -1,1 +1,11 @@
 /* Put your custom CSS here */
+body {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.list {
+  margin-top: 2rem;
+}
