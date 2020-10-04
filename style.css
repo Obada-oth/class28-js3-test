@@ -16,9 +16,14 @@ body {
 }
 
 .poster img {
-  margin-top: 2rem;
+  display: block;
+  width: 300px;
+  margin: 2rem auto;
 }
 
 .details {
   text-align: center;
+}
+p {
+  font-weight: 900;
 }
